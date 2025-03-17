@@ -1,0 +1,15 @@
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/bin/Debug/net7.0/Exam_CS_11-Class
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/bin/Debug/net7.0/Exam_CS_11-Class.deps.json
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/bin/Debug/net7.0/Exam_CS_11-Class.runtimeconfig.json
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/bin/Debug/net7.0/Exam_CS_11-Class.dll
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/bin/Debug/net7.0/Exam_CS_11-Class.pdb
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.csproj.AssemblyReference.cache
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.AssemblyInfoInputs.cache
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.AssemblyInfo.cs
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.csproj.CoreCompileInputs.cache
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.dll
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/refint/Exam_CS_11-Class.dll
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.pdb
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/Exam_CS_11-Class.genruntimeconfig.cache
+/Users/user/RiderProjects/Exam_CS_11-Class/Exam_CS_11-Class/obj/Debug/net7.0/ref/Exam_CS_11-Class.dll
