@@ -15,16 +15,49 @@ Console.OutputEncoding = System.Text.Encoding.UTF8; // для укр. текст
 Console.WriteLine("------------ Welcome to Competition App (8) ------------");
 
 Console.WriteLine("----- MENU -----");
-Console.WriteLine("1. Show all competition members");
-Console.WriteLine("2. Add new member");
-Console.WriteLine("3. Delete member");
-Console.WriteLine("4. Add new member");
+Console.WriteLine("1. Show all competitions");
+Console.WriteLine("2. Add new competition");
+Console.WriteLine("3. Delete competition");
+Console.WriteLine("4. Load data from file");
 Console.WriteLine("5. Save data to file");
 Console.WriteLine("6. Show all competition types");
 Console.WriteLine("7. Add new competition type");
 Console.WriteLine("8. Облік результатів змагань у певному виді");
 Console.WriteLine("9. Підведення підсумків");
 
+List<Competition> competitionList = new();
+
+while (true)
+{
+    Console.Write("Select menu option: ");
+    int option = int.Parse(Console.ReadLine());
+
+    switch (option)
+    {
+        case 1:
+            foreach (var com in competitionList)
+            {
+                Console.WriteLine("-------------- Competition -------------");
+                Console.WriteLine($"Name: {com.Name}");
+                Console.WriteLine($"Distance: {com.Distance}m");
+            }
+            break;
+        case 2:
+            var newCompetition = new Competition();
+
+            Console.Write("Enter Competition Name: ");
+            newCompetition.Name = Console.ReadLine();
+            Console.Write("Enter Competition Distance: ");
+            newCompetition.Distance = double.Parse(Console.ReadLine());
+            
+            competitionList.Add(newCompetition);
+            break;
+    }
+
+    Console.WriteLine("Натисніть щось для продовження...");
+    Console.ReadKey();
+    Console.Clear();
+}
 public class Member
 {
     public string Name { get; set; }
