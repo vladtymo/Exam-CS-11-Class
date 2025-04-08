@@ -10,6 +10,8 @@
     Збереження у файлі(завантаження з файлу) результатів змагань по датах
     Підведення підсумків (визначення переможців у певному виді змагання)*/
 
+using System.Text.Json;
+
 Console.OutputEncoding = System.Text.Encoding.UTF8; // для укр. тексту
 
 Console.WriteLine("------------ Welcome to Competition App (8) ------------");
@@ -51,6 +53,14 @@ while (true)
             newCompetition.Distance = double.Parse(Console.ReadLine());
             
             competitionList.Add(newCompetition);
+            break;
+        case 4:
+            string competitionJsonRead = File.ReadAllText($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/competition.json");
+            competitionList = JsonSerializer.Deserialize<List<Competition>>(competitionJsonRead);
+            break;
+        case 5:
+            string competitionJson = JsonSerializer.Serialize(competitionList);
+            File.WriteAllText($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/competition.json", competitionJson);
             break;
     }
 
