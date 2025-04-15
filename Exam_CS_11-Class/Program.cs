@@ -22,7 +22,7 @@ Console.WriteLine("2. Add new competition");
 Console.WriteLine("3. Delete competition");
 Console.WriteLine("4. Load data from file");
 Console.WriteLine("5. Save data to file");
-Console.WriteLine("6. Show all competition types");
+Console.WriteLine("6. Show competition by name");
 Console.WriteLine("7. Add new competition type");
 Console.WriteLine("8. Облік результатів змагань у певному виді");
 Console.WriteLine("9. Підведення підсумків");
@@ -61,6 +61,35 @@ while (true)
         case 5:
             string competitionJson = JsonSerializer.Serialize(competitionList);
             File.WriteAllText($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/competition.json", competitionJson);
+            break;
+        case 3:
+            Console.WriteLine("Enter competition name to delete: ");
+            string nameToDelete = Console.ReadLine();
+            
+            var itemToDelete = competitionList.Find(x => x.Name == nameToDelete);
+            if (itemToDelete == null)
+            {
+                Console.WriteLine("Invalid competition name!");
+                break;
+            }
+            
+            competitionList.Remove(itemToDelete);
+            Console.WriteLine($"Competition: {itemToDelete.Name} was deleted!");
+            break;
+        case 6:
+            Console.WriteLine("Enter competition name to search: ");
+            string nameToSearch = Console.ReadLine();
+            
+            var itemToShow = competitionList.Find(x => x.Name == nameToSearch);
+            if (itemToShow == null)
+            {
+                Console.WriteLine("Invalid competition name!");
+                break;
+            }
+            
+            Console.WriteLine("-------------- Competition -------------");
+            Console.WriteLine($"Name: {itemToShow.Name}");
+            Console.WriteLine($"Distance: {itemToShow.Distance}m");
             break;
     }
 
